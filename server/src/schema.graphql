@@ -1,0 +1,23 @@
+type Query {
+  info: String!
+  colorsold: String!
+  colors(filter: String, skip: Int, first: Int): [Color!]!
+  color(id: ID, colorID: ID): Color
+  feed: [Link!]!
+}
+
+type Color {
+    id: ID!
+    color_code: String!
+}
+
+type Mutation {
+    addLink(url: String!, description: String!): Link!
+    setColor(color_code: String!): Color!
+}
+
+type Link {
+    id: ID!
+    description: String!
+    url: String!
+}
