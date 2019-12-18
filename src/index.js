@@ -11,7 +11,7 @@ import { InMemoryCache } from 'apollo-cache-inmemory'
 
 // 2
 const httpLink = createHttpLink({
-    uri: 'http://localhost:4000'
+    uri: 'https://sleepy-dusk-27683.herokuapp.com/' //'http://localhost:4000'
   })
   
   // 3
